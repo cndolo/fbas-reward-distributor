@@ -55,7 +55,7 @@ The output is always a sorted list of tuples: (NodeID, Public Key (where availab
     1. the Shapley-Shubik power index
 
         ```
-            cargo run --release -- rank test_data/mobilecoin_nodes_2021-10-22.json power-index-enum
+        cargo run --release -- rank test_data/mobilecoin_nodes_2021-10-22.json power-index-enum
         ```
 
         This algorithm computes the players' Shapley-Shubik indices via enumeration in `O(2^n)` time, and is therefore not recommended for larger FBASs.
@@ -70,12 +70,11 @@ The output is always a sorted list of tuples: (NodeID, Public Key (where availab
 
         ```
         cargo run --release -- rank test_data/mobilecoin_nodes_2021-10-22.json node-rank
-
         ```
 
 ## Usage as a library
 
-```
+```toml
 [dependencies]
 fbas-reward-distributor = { git = "https://github.com/cndolo/fbas-reward-distributor", default-features = true}
 ```
@@ -86,7 +85,7 @@ See the [fbas-graph-generator](https://github.com/cndolo/fbas-graph-generator) f
 
 1. Build with
 
-```
+```bash
 cargo build --release --features "measurements"
 ```
 2. then run performance measurements using the selected ranking algorithm
