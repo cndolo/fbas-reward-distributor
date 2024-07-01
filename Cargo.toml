@@ -37,7 +37,7 @@ fbas_analyzer = { version = "0.7", default-features = false, features = ["qsc-si
 hex = "0.4.3"
 structopt = {version = "0.3.26", optional = true}
 sha3 = "0.10.0"
-bit-set = "0.5.2"
+bit-set = "0.6.0"
 itertools = "0.12.0"
 rug = "1.15.0"
 rand = "0.8.5"
